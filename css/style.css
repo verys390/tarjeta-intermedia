@@ -1,0 +1,185 @@
+/* ==================================================
+   BASE
+================================================== */
+* { box-sizing: border-box; }
+
+body{
+  margin: 0;
+  background: #f5f4f2;
+  font-family: 'Montserrat', sans-serif;
+  color: #2a2a2a;
+  overflow-x: hidden;
+}
+
+/* ==================================================
+   SISTEMA DE CAJAS (reutilizable Mylo Soul)
+================================================== */
+.box{
+  border-radius: 22px;
+  padding: 3.2rem 2.4rem;
+  box-shadow: 0 30px 60px rgba(0,0,0,.10);
+  background: #ffffff;
+}
+
+.box-white{ background:#ffffff; }
+
+.box-soft{
+  background: linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.85));
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+/* ==================================================
+   HERO / TARJETA PRINCIPAL
+================================================== */
+.card-invitacion{
+  width: 100%;
+}
+
+/* Tipografía */
+.eyebrow{
+  display: inline-block;
+  font-size: .7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c9b9a3;
+  margin-bottom: .6rem;
+}
+
+.nombre{
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 4px;
+  font-size: 3.2rem;
+}
+
+.evento{
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 1.05rem;
+}
+
+.divider{
+  width: 52px;
+  height: 1px;
+  background: #c9b9a3;
+  margin: 1.2rem auto;
+}
+
+.divider-soft{
+  opacity: .6;
+  margin: 1.4rem auto;
+}
+/* Avatar hero */
+.foto-avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(201, 185, 163, 0.6); /* tono dorado suave */
+  box-shadow: 0 12px 25px rgba(0,0,0,.18);
+}
+
+
+.mensaje{
+  font-size: .95rem;
+  line-height: 1.7;
+  margin: 0;
+   color: #3a3a3a;
+}
+
+.fecha{
+  font-weight: 500;
+  font-size: .95rem;
+  margin: 0;
+}
+
+.lugar{
+  font-size: .92rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.mensaje-final{
+  font-weight: 500;
+  color: #3a3a3a;
+}
+
+/* ==================================================
+   SECCIONES
+================================================== */
+.section-title{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  margin: 0;
+}
+
+.section-text{
+  font-size: .95rem;
+  line-height: 1.7;
+  color: #444;
+  margin: 0;
+}
+
+/* Botones (detalle sutil, no invasivo) */
+.btn{
+  border-radius: 999px;
+}
+/* ================= FOTO SALÓN ================= */
+
+.foto-salon {
+  display: flex;
+  justify-content: center;
+}
+
+.img-salon {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ==================================================
+   FOOTER
+================================================== */
+.footer-marca{
+  padding: 12px 0 18px;
+}
+
+.marca-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: .75rem;
+  color: #777;
+  text-decoration: none;
+}
+
+.logo-marca{
+  height: 34px;
+  opacity: .75;
+}
+
+/* ==================================================
+   ANIMACIONES SUAVES
+================================================== */
+.reveal{
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal.is-visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 576px) {
+  .img-salon {
+    width: 120px;
+    height: 120px;
+  }
+}
